@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Connexion</title>
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Se connecter</h1>
+    <form method="POST" action="../src/service/connexion.php">
+        <label>Email :</label>
+        <input type="email" name="email" required><br>
+
+        <label>Mot de passe :</label>
+        <input type="password" name="password" required><br>
+
+        <button type="submit">Se connecter</button>
+    </form>
+    <p>Vous n'avez pas de compte ?
+        <a href="inscription.html">S'inscrire</a>
+    </p>
+
+    <div id="error-message" class="error"></div>
+
+    <script>
+        const testUrl = new URL('http://localhost/src/connexoin/?name=toto');
+
+        //Utiliser pour les messages d'erreurs
+        /*console.log(testUrl);
+        const urlParams = new URLSearchParams(window.location.search);*/
+        console.log(urlParams);
+        if (urlParams.has('login_error')) {
+            document.getElementById('error-message').innerText = "Email ou mot de passe incorrect.";
+        }
+    </script>
+
+</body>
+</html>
