@@ -216,7 +216,7 @@ if (!isset($_SESSION['user_data'])) {
             </div>
         <?php
             if ($_SESSION['user_data']['role'] == 'admin'){
-/*                require_once '../src/service/modification_role.php';*/
+/*                require_once '../src/service/modif_user.php';*/
                 require_once 'admin.php';
         }
         ?>

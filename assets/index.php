@@ -9,14 +9,20 @@
     <link href="style/all.css" rel="stylesheet">
 </head>
 <body>
-<?php require_once 'nav.php'; ?>
+<?php /*require_once 'nav.php'; */?>
 
-<div class="coins d-flex row r">
-    <div class="menu_g b">
+<header class="nav-bar">
+    <?php require_once 'nav.php'; ?>
+</header>
+
+<!--<div class="coins d-flex row">
+-->
+<main class="main-container coins d-flex row">
+    <aside class="menu_g">
         <?php require_once 'menu.php'; ?>
-    </div>
+    </aside>
     <!-- Section de connexion -->
-    <div class="menu_d form g" id="connexion-form">
+    <div class="menu_d form" id="connexion-form">
         <h1>Se connecter</h1>
         <!-- Message d'erreur de connexion -->
         <p id="error-message-connexion" class="error" style="display:none;"></p>
@@ -34,7 +40,7 @@
     </div>
 
     <!-- Section d'inscription -->
-    <div class="menu_d form r hidden" id="inscription-form">
+    <div class="menu_d form hidden" id="inscription-form">
         <h1>S'inscrire</h1>
 
         <!-- Message d'erreur d'inscription -->
@@ -57,7 +63,9 @@
             <button type="button" id="show-connexion">Déjà client</button>
         </form>
     </div>
-</div>
+<!--</div>
+-->
+</main>
 
 <script src="app.js"></script>
 
