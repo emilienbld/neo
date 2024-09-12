@@ -33,6 +33,6 @@ if ($_SESSION['user_data']['role'] === 'admin') {
     $allUsers = iterator_to_array($allUsersCursor);
     $_SESSION['all_users'] = $allUsers;
 }
-
-header('Location: ../../assets/parametre.php');
+/*die('te');*/
+header('Location: ../../assets/parametre/parametre.php');
 exit();

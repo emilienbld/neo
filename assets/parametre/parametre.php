@@ -1,5 +1,5 @@
 <?php
-require '../vendor/autoload.php';
+require '../../vendor/autoload.php';
 
 error_reporting(E_ALL);
 ini_set("display_errors", 1);
@@ -19,7 +19,7 @@ if (!isset($_SESSION['user_data'])) {
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Paramètres du compte</title>
-    <link href="style/all.css" rel="stylesheet">
+    <link href="../style/all.css" rel="stylesheet">
     <script>
         function toggleEdit(fieldId) {
             var inputField = document.getElementById('input-' + fieldId);
@@ -45,10 +45,10 @@ if (!isset($_SESSION['user_data'])) {
     </script>
 </head>
 <body>
-    <?php require_once 'nav.php'; ?>
+    <?php require_once '../nav/nav.php'; ?>
     <div class="coins d-flex row">
         <div class="menu_g">
-            <?php require_once 'menu.php'; ?>
+            <?php require_once '../menu/menu.php'; ?>
         </div>
 
         <div class="acount-info">
@@ -216,8 +216,7 @@ if (!isset($_SESSION['user_data'])) {
             </div>
         <?php
             if ($_SESSION['user_data']['role'] == 'admin'){
-/*                require_once '../src/service/modif_user.php';*/
-                require_once 'admin.php';
+                require_once '../role/admin/admin.php';
         }
         ?>
         </div>

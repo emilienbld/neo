@@ -9,65 +9,26 @@
     <link href="style/all.css" rel="stylesheet">
 </head>
 <body>
-<?php /*require_once 'nav.php'; */?>
 
 <header class="nav-bar">
-    <?php require_once 'nav.php'; ?>
+    <?php require_once 'nav/nav.php'; ?>
 </header>
 
-<!--<div class="coins d-flex row">
--->
 <main class="main-container coins d-flex row">
     <aside class="menu_g">
-        <?php require_once 'menu.php'; ?>
+        <?php require_once 'menu/menu.php'; ?>
     </aside>
-    <!-- Section de connexion -->
-    <div class="menu_d form" id="connexion-form">
-        <h1>Se connecter</h1>
-        <!-- Message d'erreur de connexion -->
-        <p id="error-message-connexion" class="error" style="display:none;"></p>
 
-        <form method="POST" action="../src/service/connexion.php">
-            <label>Email :</label>
-            <input type="email" name="email" required><br>
+    <?php
+    $action = $_GET['action'] ?? 'connexion';
 
-            <label>Mot de passe :</label>
-            <input type="password" name="password" required><br>
-
-            <button type="submit">Se connecter</button>
-            <button type="button" id="show-inscription">Pas de compte</button>
-        </form>
-    </div>
-
-    <!-- Section d'inscription -->
-    <div class="menu_d form hidden" id="inscription-form">
-        <h1>S'inscrire</h1>
-
-        <!-- Message d'erreur d'inscription -->
-        <p id="error-message-inscription" class="error" style="display:none;"></p>
-
-        <form method="POST" action="../src/service/inscription.php">
-            <label>Prénom :</label>
-            <input type="text" name="firstname" required><br>
-
-            <label>Nom :</label>
-            <input type="text" name="lastname" required><br>
-
-            <label>Email :</label>
-            <input type="email" name="email" required><br>
-
-            <label>Mot de passe :</label>
-            <input type="password" name="password" required><br>
-
-            <button type="submit">S'inscrire</button>
-            <button type="button" id="show-connexion">Déjà client</button>
-        </form>
-    </div>
-<!--</div>
--->
+    if ($action === 'inscription') {
+        require_once 'inscription/inscription.php';
+    } else {
+        require_once 'connexion/connexion.php';
+    }
+    ?>
 </main>
-
-<script src="app.js"></script>
 
 </body>
 </html>

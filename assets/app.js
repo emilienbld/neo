@@ -15,6 +15,7 @@ const inscriptionForm = document.getElementById('inscription-form');
 const showInscriptionButton = document.getElementById('show-inscription');
 const showConnexionButton = document.getElementById('show-connexion');
 
+/*
 showInscriptionButton.addEventListener('click', function() {
     connexionForm.classList.add('hidden');
     inscriptionForm.classList.remove('hidden');
@@ -24,6 +25,7 @@ showConnexionButton.addEventListener('click', function() {
     inscriptionForm.classList.add('hidden');
     connexionForm.classList.remove('hidden');
 });
+*/
 
 function toggleForm(id) {
     var form = document.getElementById(id);
