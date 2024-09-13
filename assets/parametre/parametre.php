@@ -47,16 +47,13 @@ if (!isset($_SESSION['user_data'])) {
 <body>
     <?php require_once '../nav/nav.php'; ?>
     <div class="coins d-flex row">
-        <div class="menu_g">
+        <div class="menu-toggle" id="menu-toggle">&#x2192;</div>
+
+        <aside id="side-menu">
             <?php require_once '../menu/menu.php'; ?>
-        </div>
+        </aside>
 
         <div class="acount-info">
-            <?php
-/*            if ($_SESSION['user_data']['role'] == 'user'){
-                print('mettre le code user');
-                */?>
-
             <h1>Paramètres de votre compte</h1>
             <h2>Informations du compte</h2>
 
@@ -210,8 +207,8 @@ if (!isset($_SESSION['user_data'])) {
 
                 <!-- Liens pour se déconnecter et changer de compte -->
                 <div class="acount-deco">
-                    <a href="../../src/service/deconnexion.php"class="">Changer de compte</a>|
-                    <a href="../../src/service/deconnexion.php"class="">Se déconnecter</a>
+                    <a href="../../src/service/deconnexion.php">Changer de compte</a>|
+                    <a href="../../src/service/deconnexion.php">Se déconnecter</a>
                 </div>
             </div>
         <?php

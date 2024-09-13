@@ -10,25 +10,27 @@
 </head>
 <body>
 
-<header class="nav-bar">
     <?php require_once 'nav/nav.php'; ?>
-</header>
 
-<main class="main-container coins d-flex row">
-    <aside class="menu_g">
-        <?php require_once 'menu/menu.php'; ?>
-    </aside>
+    <div class="coins">
+        <div class="menu-toggle" id="menu-toggle">&#x2192;</div>
 
-    <?php
-    $action = $_GET['action'] ?? 'connexion';
+        <aside id="side-menu">
+            <?php require_once 'menu/menu.php'; ?>
+        </aside>
 
-    if ($action === 'inscription') {
-        require_once 'inscription/inscription.php';
-    } else {
-        require_once 'connexion/connexion.php';
-    }
-    ?>
-</main>
+        <div class="form-container">
+            <?php
+            $action = $_GET['action'] ?? 'connexion';
+
+            if ($action === 'inscription') {
+                require_once 'inscription/inscription.php';
+            } else {
+                require_once 'connexion/connexion.php';
+            }
+            ?>
+        </div>
+    </div>
 
 </body>
 </html>

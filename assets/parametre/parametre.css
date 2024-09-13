@@ -1,0 +1,80 @@
+.acount-info {
+    flex: 4;
+    margin-top: 30px;
+}
+
+.acount-info-user {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 30px ;
+}
+
+.input-field {
+    display: inline-block;
+}
+
+.input-field input {
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 200px;
+}
+
+.edit-button {
+    margin-left: 10px;
+    padding: 10px 15px;
+    background-color: #d4c384;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.edit-button:hover {
+    background-color: #eedea7;
+}
+
+.save-button {
+    display: none;
+    margin-left: 10px;
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.save-button:hover {
+    background-color: #45a049;
+}
+
+.cancel-button {
+    display: none;
+    margin-left: 10px;
+    padding: 10px 15px;
+    background-color: #f44336;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cancel-button:hover {
+    background-color: #e53935;
+}
+
+.acount-deco a {
+    color: #007BFF;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.acount-deco a:hover {
+    text-decoration: underline;
+}

@@ -1,4 +1,4 @@
-<div class="menu_d form" id="inscription-form">
+<div class="inscription form" id="inscription-form">
     <h1>S'inscrire</h1>
 
     <!-- Message d'erreur d'inscription -->
@@ -18,7 +18,7 @@
         <input type="password" name="password" required><br>
 
         <button type="submit">S'inscrire</button>
-        <a href="?action=connexion"><button type="button">Se connecter</button></a>
+        <a href="?action=connexion"><button type="button">Déjà client ?</button></a>
     </form>
 
 </div>

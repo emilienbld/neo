@@ -1,5 +1,15 @@
 @import url("style.css");
+
+@import url("utils/_buton.css");
 @import url("utils/_flex.css");
 @import url("utils/_reset.css");
 @import url("utils/_visu.css");
-@import url("utils/_buton.css");
+
+@import url("../connexion/connexion.css");
+@import url("../inscription/inscription.css");
+@import url("../menu/menu.css");
+@import url("../nav/nav.css");
+@import url("../parametre/parametre.css");
+
+@import url("../role/admin/admin.css");
+/*@import url("../role/user/user.css");*/

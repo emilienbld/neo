@@ -1,0 +1,40 @@
+.connnexion {
+    height: 500px;
+    width: 500px;
+    margin: auto;
+    padding: 20px;
+    background-color: #eedea7;
+    border-radius: 10px;
+}
+
+.connnexion form label,
+.connnexion form input,
+.connnexion form button {
+    display: block;
+    width: 100%;
+    margin: 2px 0;
+}
+
+.connnexion form input{
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.connnexion form button {
+    padding: 10px;
+    background-color: #d4c384;
+    border: 1px solid #d4c384;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.connnexion form button:hover {
+    background-color: #eedea7;
+    border: 1px solid #d4c384;
+}
+
+.connnexion form a{
+    text-decoration: none;
+
+}
