@@ -20,7 +20,8 @@ $_SESSION['user_data'] = [
     'rue' => $user['adresse']['rue'],
     'ville' => $user['adresse']['ville'],
     'code_postal' => $user['adresse']['code_postal'],
-    'role'=> $user['role']
+    'role'=> $user['role'],
+    'profil_pic'=> $user['profil_pic']
 ];
 
 /*var_dump($user['role']);*/
