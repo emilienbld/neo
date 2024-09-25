@@ -1,9 +1,15 @@
 <div class="menu-content">
     <div class="user-info">
-        <img src="" alt="Photo de profil" class="profile-pic">
+        <?php
+        $profilPic = isset($_SESSION['user_data']['profil_pic']) && $_SESSION['user_data']['profil_pic'] != null
+            ? '/assets/photo/profil_pic/' . htmlspecialchars($_SESSION['user_data']['profil_pic'])
+            : '/assets/photo/profil_pic/default-profil.png';
+//        dd($_SESSION['user_data']);
+
+        ?>
+        <img src="<?php echo $profilPic; ?>" alt="Photo de profil" class="profil-pic">
         <p><?php echo isset($_SESSION['user_data']['firstname']) ? htmlspecialchars($_SESSION['user_data']['firstname']) : 'Visiteur'; ?></p>
     </div>
-
     <nav class="main-nav">
         <ul>
             <li><a href="#"><img src="/assets/icons/home.svg" alt="Accueil"> Accueil</a></li>
