@@ -35,7 +35,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 'ville' => $ville,
                 'code_postal' => $code_postal
             ],
-            'role' => 'user'
+            'role' => 'user',
+            'profil_pic' => $profil_pic
         ];
 
         try {
