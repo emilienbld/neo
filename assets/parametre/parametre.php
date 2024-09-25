@@ -212,6 +212,7 @@ if (!isset($_SESSION['user_data'])) {
                 </div>
             </div>
         <?php
+            require_once '../photo/pp.php';
             if ($_SESSION['user_data']['role'] == 'admin'){
                 require_once '../role/admin/admin.php';
         }
