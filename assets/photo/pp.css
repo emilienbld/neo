@@ -1,0 +1,54 @@
+.pp-user {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 30px;
+}
+
+.edit-pp-button {
+    padding: 10px 15px;
+    background-color: #d4c384;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 10px;
+}
+
+.edit-pp-button:hover {
+    background-color: #eedea7;
+}
+
+.save-pp-button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.save-pp-button:hover {
+    background-color: #45a049;
+}
+
+.flex-responsive {
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+}
+
+@media (max-width: 768px) {
+    .flex-responsive {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .edit-pp-button, .save-pp-button {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
